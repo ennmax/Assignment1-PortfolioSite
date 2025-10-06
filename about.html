@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About Me • Academic Portfolio</title>
+  <!-- Link the CSS file used by all pages -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Site Header -->
+<header class="site-header">
+  <div class="container" style="display:flex; align-items:center; justify-content:space-between; gap:1rem;">
+    <div class="brand" aria-label="Site brand">
+      <!-- Decorative brand dot for better looks -->
+      <span class="dot">●</span><span>Academic Portfolio</span>
+    </div>
+    <nav aria-label="Primary">
+      <ul>
+        <li><a href="index.html" >Home</a></li>
+        <li><a href="about.html" aria-current="page">About Me</a></li>
+        <li><a href="projects.html" >Projects</a></li>
+        <li><a href="contact.html" >Contact Me</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+  <main class="container">
+    <article class="grid cols-2 hero" aria-labelledby="about-title">
+      <!-- Left column has avatar and short bio -->
+      <section class="card">
+        <h1 id="about-title" class="title">About Me</h1>
+        <!-- Headshot image with alt text for accessibility -->
+        <figure>
+          <img src="assets/headshot.png" alt="An image of Shayaan Qureshi's GitHub avatar" class="responsive" />
+          <figcaption class="help">Image of my GitHub avatar</figcaption>
+        </figure>
+        <p>I am a 2nd-year Networking & IT Security student enrolled in Ontario Tech University with strong interests in web design and cybersecurity. I enjoy turning ideas into actionable work!</p>
+      </section>
+
+      <!-- Right column has an HTML5 video with controls and poster -->
+      <section class="card">
+        <h2>Short Intro</h2>
+        <!--
+          The <video> element below, "controls" exposes play/pause/time
+          controls and "poster" provides a still image before playback
+        -->
+        <video controls width="100%" poster="assets/poster.png">
+          <source src="media/intro.mp4" type="video/mp4" />
+          <!-- Fallback text for browsers without video support -->
+          Sorry, your browser does not support the embedded video. You can download it from <a href="media/intro.mp4">this link</a> instead.
+        </video>
+        <p class="help">A short video clip of a 50-second countdown because I hurt my voice and couldn't record an intro. Sound at the end (proof that sound works). Poster used to demonstrate coding skills for the assignment.</p>
+      </section>
+    </article>
+  </main>
+  <!-- Site Footer -->
+<footer class="site-footer">
+  <div class="inner container">
+    <!-- Contact email in the footer -->
+    <div>Contact: <a href="mailto:shayaan.qureshi@ontariotechu.net">shayaan.qureshi@ontariotechu.net</a></div>
+    <!-- Copyright line -->
+    <div>&copy; 2025 Shayaan Qureshi. All rights reserved.</div>
+  </div>
+</footer>
+
+</body>
+</html>

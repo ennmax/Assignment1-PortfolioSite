@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact Me • Academic Portfolio</title>
+  <!-- Link the CSS file used by all pages -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Site Header -->
+<header class="site-header">
+  <div class="container" style="display:flex; align-items:center; justify-content:space-between; gap:1rem;">
+    <div class="brand" aria-label="Site brand">
+      <!-- Decorative brand dot for better looks -->
+      <span class="dot">●</span><span>Academic Portfolio</span>
+    </div>
+    <nav aria-label="Primary">
+      <ul>
+        <li><a href="index.html" >Home</a></li>
+        <li><a href="about.html" >About Me</a></li>
+        <li><a href="projects.html" >Projects</a></li>
+        <li><a href="contact.html" aria-current="page">Contact Me</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+  <main class="container">
+    <section class="hero" aria-labelledby="contact-title">
+      <h1 id="contact-title" class="title">Contact Me</h1>
+      <p class="subtitle">Questions? Feel free to reach out to me using the form below. I usually respond within 1-2 business days. For business inquiries, please contact me directly using the email at the bottom.</p>
+
+      <!-- Form to contact me -->
+      <form class="contact-form card" action="#" method="post" novalidate>
+        <div>
+          <label for="name">Full name</label>
+          <input id="name" name="name" type="text" required minlength="2" autocomplete="name" placeholder="John Doe"/>
+          <p class="help">Please enter your first and last name.</p>
+        </div>
+
+        <div>
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" required autocomplete="email" placeholder="name@example.com"/>
+          <p class="help">Must be a valid email address.</p>
+        </div>
+
+        <div>
+          <label for="phone">Phone</label>
+          <input id="phone" name="phone" type="tel" required pattern="[0-9]{10}" inputmode="numeric" title="Enter a 10‑digit phone number (digits only)"/>
+          <p class="help">10 digits, numbers only.</p>
+        </div>
+
+        <div>
+          <label for="comments">Comments</label>
+          <textarea id="comments" name="comments" required rows="6" minlength="10" placeholder="How can I help?"></textarea>
+          <p class="help">Leave a message for me (minimum 10 characters).</p>
+        </div>
+
+        <div>
+          <button type="submit">Submit</button>
+        </div>
+      </form>
+    </section>
+  </main>
+  <!-- Site Footer -->
+<footer class="site-footer">
+  <div class="inner container">
+    <!-- Contact email in the footer -->
+    <div>Contact: <a href="mailto:shayaan.qureshi@ontariotechu.net">shayaan.qureshi@ontariotechu.net</a></div>
+    <!-- Copyright line -->
+    <div>&copy; 2025 Shayaan Qureshi. All rights reserved.</div>
+  </div>
+</footer>
+
+</body>
+</html>

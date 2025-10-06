@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Home • Academic Portfolio</title>
+  <!-- Link the CSS file used by all pages -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Site Header -->
+<header class="site-header">
+  <div class="container" style="display:flex; align-items:center; justify-content:space-between; gap:1rem;">
+    <div class="brand" aria-label="Site brand">
+      <!-- Decorative brand dot for better looks -->
+      <span class="dot">●</span><span>Academic Portfolio</span>
+    </div>
+    <nav aria-label="Primary">
+      <ul>
+        <li><a href="index.html" aria-current="page">Home</a></li>
+        <li><a href="about.html" >About Me</a></li>
+        <li><a href="projects.html" >Projects</a></li>
+        <li><a href="contact.html" >Contact Me</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+  <main class="container">
+    <!-- Hero section briefly explains the site -->
+    <section class="hero" aria-labelledby="home-title">
+      <h1 id="home-title" class="title">I am <span style="color:var(--accent)">Shayaan Qureshi</span></h1>
+      <p class="subtitle">Welcome to my portfolio. Use the navigation above to learn more about me or to get in touch.</p>
+      <div class="grid cols-2">
+        <div class="card">
+          <h2>What you will find here</h2>
+          <ul>
+            <li><strong>About Me:</strong> A short bio, my GitHub avatar, and a short intro video</li>
+            <li><strong>Projects:</strong> Some recent projects I did</li>
+            <li><strong>Contact:</strong> A validated form so you can reach me securely</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h2>What I used to build this website</h2>
+          <p>Designed using simple <em>semantic HTML5</em> and <em>modern CSS</em> for seamless use on most browsers. All without JavaScript.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <!-- Site Footer -->
+<footer class="site-footer">
+  <div class="inner container">
+    <!-- Contact email in the footer -->
+    <div>Contact: <a href="mailto:shayaan.qureshi@ontariotechu.net">shayaan.qureshi@ontariotechu.net</a></div>
+    <!-- Copyright line -->
+    <div>&copy; 2025 Shayaan Qureshi. All rights reserved.</div>
+  </div>
+</footer>
+
+</body>
+</html>
