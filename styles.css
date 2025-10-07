@@ -159,3 +159,29 @@ footer .inner {
   padding: 1rem 1.5rem;
 }
 footer a { color: var(--brand); }
+
+/* Header layout */
+header .container {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* Primary nav */
+nav ul { display: block; }
+nav ul li { display: inline-block; margin-right: .8rem; }
+nav ul li:last-child { margin-right: 0; }
+
+/* Footer with standard linear gradient */
+footer.site-footer {
+  background: linear-gradient(to right, rgba(59,130,246,0.15), rgba(34,211,238,0.10));
+}
+
+/* Hero with angled linear gradient */
+.hero {
+  background: linear-gradient(135deg, rgba(34,211,238,.10), rgba(34,211,238,0) 65%);
+}
+
+/* Fluid typography */
+h1.title { font-size: clamp(1.6rem, 2.2vw + 1rem, 2.6rem); }

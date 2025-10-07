@@ -1,0 +1,10 @@
+/* Mobile (less than or equal to 599px) */
+@media (max-width: 599px) {
+  .container { padding: 1rem; }
+  .grid { display: grid; gap: 1rem; }
+  .grid.cols-2, .grid.cols-3 { grid-template-columns: 1fr; }
+  nav a { padding: .6rem .7rem; }
+  .card { padding: .9rem; }
+  form.contact-form { max-width: 100%; }
+  .brand { font-size: 1rem; }
+}
